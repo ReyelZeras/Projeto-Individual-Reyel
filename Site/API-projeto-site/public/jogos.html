@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/jogos.css">
+    <title>Calendário de Jogos</title>
+</head>
+
+<body>
+
+    <div id="conteinergeral">
+
+        <div id="menu-lateral">
+            <div id="logo"><img src="./imagens/logo.png" alt=""></div>
+
+            <a href="index.html" class="link"><div id="menu-home" class="icone-lateral"><img src="./imagens/icones/home.svg" alt=""> <span
+                id="txt-tit1">INÍCIO</span></div></a>
+
+            <a href="jogos.html" class="link"><div id="menu-quadra" class="icone-lateral"><img src="./imagens/icones/quadra.svg" alt=""><span
+                    id="txt-tit2">JOGOS</span></div></a>
+
+            <a href="noticias.html" class="link"><div id="menu-news" class="icone-lateral"><img src="./imagens/icones/newspaper.svg" alt=""><span
+                    id="txt-tit3">NOTÍCIAS</span> </div></a>
+
+            <a href="usuario.html" class="link"><div id="menu-perfil" class="icone-lateral"><img src="./imagens/icones/perfil.svg" alt=""><span
+                    id="txt-tit4">PERFIL</span></div></a>
+        </div>
+        <div id="fundo">
+            <div id="apresentacao">
+                <div id="patroc">
+                    <div class="pratoc-img" id="a"><a href="https://www.umbro.com.br/"><img
+                                src="./imagens/Patrocinadores/umbro.jpg" alt=""></a></div>
+                    <div class="pratoc-img" id="b"><a href="https://sumup.com.br"><img
+                                src="./imagens/Patrocinadores/sumup.jpg" alt=""></a></div>
+                    <div class="pratoc-img" id="c"><a href="https://www.foxlux.com.br/"><img
+                                src="./imagens/Patrocinadores/foxlux.png" alt=""></a></div>
+                    <div class="pratoc-img" id="d"><a href="https://stxdi.com/"><img
+                                src="./imagens/Patrocinadores/stx.png" alt=""></a></div>
+                    <div class="pratoc-img" id="d"><a href="https://cartaodetodos.com.br/"><img
+                                src="./imagens/Patrocinadores/cartaodetodos.png" alt=""></a></div>
+                    <div class="pratoc-img" id="e"><a href="https://philco.com.br/"><img
+                                src="./imagens/Patrocinadores/philco.jpg" alt=""></a></div>
+                    <div class="pratoc-img" id="f"><a href="https://kodilar.com.br/"><img
+                                src="./imagens/Patrocinadores/kodilar.png" alt=""></a></div>
+                    <div class="pratoc-img" id="g"><a href="https://www.konami.com/games/la/pt/"><img
+                                src="./imagens/Patrocinadores/konami.jpg" alt=""></a></div>
+                    <div class="pratoc-img" id="h"><a href="https://www.tekbond.com.br/pt-br"><img
+                                src="./imagens/Patrocinadores/tekbond.png" alt=""></a></div>
+                    <div class="pratoc-img" id="i"><a href="https://www.oceanob2b.com/"><img
+                                src="./imagens/Patrocinadores/oceano.jpg" alt=""></a></div>
+                    <div class="pratoc-img" id="j"><a href="https://kicaldo.com.br/"><img
+                                src="./imagens/Patrocinadores/kicaldo.png" alt=""></a></div>
+                </div>
+
+
+                <!-- FEVEREIRO -->
+                <div id="div_fevereiro" style="display: none;" class="mes">
+                    <div class="seta_e"><img onclick="fevereiroe()" src="imagens/icones/setaesquerda.png" alt=""></div>
+                    <h1 id="h1_mes">FEVEREIRO</h1>
+                    <div class="seta_d"><img onclick="fevereirod()" src="imagens/icones/setadireita.png" alt=""></div>
+                </div>
+
+                <!-- MARÇO -->
+                <div id="div_marco" style="display: none;" class="mes">
+                    <div class="seta_e"><img onclick="marcoe()" src="imagens/icones/setaesquerda.png" alt=""></div>
+                    <h1 id="h1_mes">MARÇO</h1>
+                    <div class="seta_d"><img onclick="marcod()" src="imagens/icones/setadireita.png" alt=""></div>
+                </div>
+
+                <!-- ABRIL -->
+                <div id="div_abril" style="display: none;" class="mes">
+                    <div class="seta_e"><img onclick="abrile()" src="imagens/icones/setaesquerda.png" alt=""></div>
+                    <h1 id="h1_mes">ABRIL</h1>
+                    <div class="seta_d"><img onclick="abrild()" src="imagens/icones/setadireita.png" alt=""></div>
+                </div>
+
+                <!-- MAIO -->
+                <div id="div_maio" style="display: none;" class="mes">
+                    <div class="seta_e"><img onclick="maioe()" src="imagens/icones/setaesquerda.png" alt=""></div>
+                    <h1 id="h1_mes">MAIO</h1>
+                    <div class="seta_d"><img onclick="maiod()" src="imagens/icones/setadireita.png" alt=""></div>
+                </div>
+
+                <!-- JUNHO -->
+                <div id="div_junho" style="display: flex;" class="mes">
+                    <div class="seta_e"><img onclick="junhoe()" src="imagens/icones/setaesquerda.png" alt=""></div>
+                    <h1 id="h1_mes">JUNHO</h1>
+                    <div class="seta_d"><img onclick="junhod()" src="imagens/icones/setadireita.png" alt=""></div>
+                </div>
+
+                <!-- JULHO -->
+                <div id="div_julho" style="display: none;" class="mes">
+                    <div class="seta_e"><img onclick="julhoe()" src="imagens/icones/setaesquerda.png" alt=""></div>
+                    <h1 id="h1_mes">JULHO</h1>
+                    <div class="seta_d"><img onclick="julhod()" src="imagens/icones/setadireita.png" alt=""></div>
+                </div>
+
+                <!-- AGOSTO -->
+                <div id="div_agosto" style="display: none;" class="mes">
+                    <div class="seta_e"><img onclick="agostoe()" src="imagens/icones/setaesquerda.png" alt=""></div>
+                    <h1 id="h1_mes">AGOSTO</h1>
+                    <div class="seta_d"><img onclick="agostod()" src="imagens/icones/setadireita.png" alt=""></div>
+                </div>
+
+                <!-- SETEMBRO -->
+                <div id="div_setembro" style="display: none;" class="mes">
+                    <div class="seta_e"><img onclick="setembroe()" src="imagens/icones/setaesquerda.png" alt=""></div>
+                    <h1 id="h1_mes">SETEMBRO</h1>
+                    <div class="seta_d"><img onclick="setembrod()" src="imagens/icones/setadireita.png" alt=""></div>
+                </div>
+
+                <!-- OUTUBRO -->
+                <div id="div_outubro" style="display: none;" class="mes">
+                    <div class="seta_e"><img onclick="outubroe()" src="imagens/icones/setaesquerda.png" alt=""></div>
+                    <h1 id="h1_mes">OUTUBRO</h1>
+                    <div class="seta_d"><img onclick="outubrod()" src="imagens/icones/setadireita.png" alt=""></div>
+                </div>
+
+                <!-- NOVEMBRO -->
+                <div id="div_novembro" style="display: none;" class="mes">
+                    <div class="seta_e"><img onclick="novembroe()" src="imagens/icones/setaesquerda.png" alt=""></div>
+                    <h1 id="h1_mes">NOVEMBRO</h1>
+                    <div class="seta_d"><img onclick="novembrod()" src="imagens/icones/setadireita.png" alt=""></div>
+                </div>
+
+                <!-- DEZEMBRO -->
+                <div id="div_dezembro" style="display: none;" class="mes">
+                    <div class="seta_e"><img onclick="dezembroe()" src="imagens/icones/setaesquerda.png" alt=""></div>
+                    <h1 id="h1_mes">DEZEMBRO</h1>
+                    <div class="seta_d"><img onclick="dezembrod()" src="imagens/icones/setadireita.png" alt=""></div>
+                </div>
+
+
+
+
+
+                <!-- JOGOS DE FEVEREIRO -->
+
+                <div id="div_jogos_fevereiro" class="container_jogos" style="display: none;">
+
+                    <!-- PRIMEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">21/02</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/BpAFmbpSJQI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/gvCb4nd1fAVkf4U3_smQtw_48x48.png"
+                                alt="">
+                            <div class="nometime">Santo André:</div>
+                            <div class="placar">2</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">2</span>
+                        </div>
+                    </div>
+
+                </div> <!-- CONTAINER DOS JOGOS -->
+
+                <!-- JOGOS DE MARÇO -->
+
+                <div id="div_jogos_marco" class="container_jogos" style="display: none;">
+
+                    <!-- PRIMEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">03/03</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/D2dluxH1CZY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">1</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/CD4zI_mvHVrKZaMhYQjiJg_48x48.png"
+                                alt="">
+                            <span class="nometime">Ferroviária:</span>
+                            <span class="placar2">1</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">06/03</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/MfAZvhSScaI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/4w2Z97Hf9CSOqICK3a8AxQ_48x48.png"
+                                alt="">
+                            <div class="nometime">São Paulo:</div>
+                            <div class="placar">4</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">0</span>
+                        </div>
+
+                    </div>
+
+                    <!-- SEGUNDA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Copa Libertadores</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">09/03</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/hMc8tYXsug0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">2</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://dimg-pa.googleapis.com/lg/CgZGRjAwMDA.png?sig=AI8nk_etFDa7c5N-CLM8oT3cUd7k&key=AIzaSyCUqbG5Kw_8jb3cy2ZBKvV2kAi8z0qmQO0&sk=G-ZnBu23Xms&w=48&h=48"
+                                alt="">
+                            <span class="nometime">Deportivo Lara:</span>
+                            <span class="placar2">1</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">13/03</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/lKSG6WsMGFg"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">2</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/d_-UoAOHszNZufgbaFSLXQ_48x48.png"
+                                alt="">
+                            <span class="nometime">Ituano:</span>
+                            <span class="placar2">1</span>
+                        </div>
+                    </div>
+
+                    <!-- TERCEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Copa Libertadores</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">16/03</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/6WfKQNAHlpw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://dimg-pa.googleapis.com/lg/CgZGRjAwMDA.png?sig=AI8nk_etFDa7c5N-CLM8oT3cUd7k&key=AIzaSyCUqbG5Kw_8jb3cy2ZBKvV2kAi8z0qmQO0&sk=G-ZnBu23Xms&w=48&h=48"
+                                alt="">
+                            <div class="nometime">Deportivo Lara:</div>
+                            <div class="placar">1</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">1</span>
+                        </div>
+                    </div>
+                </div> <!-- CONTAINER DOS JOGOS -->
+
+
+
+                <!-- JOGOS DE ABRIL -->
+
+                <div id="div_jogos_abril" class="container_jogos" style="display: none;">
+
+                    <!-- PRIMEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Copa Libertadores</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">06/04</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/StupAs5rrrA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/3guH9PUqsLcUw9o8VBhAlw_48x48.png"
+                                alt="">
+                            <div class="nometime">San Lorenzo:</div>
+                            <div class="placar">1</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">3</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">10/04</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/AdUE130d3sk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">0</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VYXHOgQwI7tw3EyFlWngWg_48x48.png"
+                                alt="">
+                            <span class="nometime">Botafogo SP:</span>
+                            <span class="placar2">0</span>
+                        </div>
+
+                    </div>
+
+                    <!-- SEGUNDA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Copa Libertadores</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">13/04</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/fbgiB16Qot8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">2</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/3guH9PUqsLcUw9o8VBhAlw_48x48.png"
+                                alt="">
+                            <span class="nometime">San Lorenzo:</span>
+                            <span class="placar2">2</span>
+                            <img src="https://ssl.gstatic.com/onebox/sports/soccer_timeline/red-card-right.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">16/04</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/RafMyMhF5YA"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/0e4mOPeQPUipr9oh54-7NQ_48x48.png"
+                                alt="">
+                            <div class="nometime">Ponte Preta:</div>
+                            <div class="placar">3</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">0</span>
+                        </div>
+                    </div>
+
+                    <!-- TERCEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">18/04</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/WqcWJe5xcuM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">2</div>
+                            <img src="https://ssl.gstatic.com/onebox/sports/soccer_timeline/red-card-right.svg" alt="">
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://dimg-pa.googleapis.com/lg/CgA.png?sig=AI8nk_cT_fvF9XHLwmKH9FoQ7l3x&key=AIzaSyCUqbG5Kw_8jb3cy2ZBKvV2kAi8z0qmQO0&sk=TTGMbb7EXmY&w=48&h=48"
+                                alt="">
+                            <span class="nometime">Inter de Limeira:</span>
+                            <span class="placar2">1</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Copa Libertadores</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">20/04</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/doSyULIxjJA"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">0</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/snzD6Ep_orwAcAA5c5sPNw_48x48.png"
+                                alt="">
+                            <span class="nometime">Barcelona SC:</span>
+                            <span class="placar2">2</span>
+                        </div>
+                    </div>
+
+                    <!-- QUARTA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">23/04</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/PfGQbrKxlKE"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/2YeE0Oupr5ApZJR0CyX_3g_48x48.png"
+                                alt="">
+                            <div class="nometime">Novorizontino</div>
+                            <div class="placar">1</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">0</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">25/04</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/wnh2kFlKapg"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">0</div>
+                            <img src="https://ssl.gstatic.com/onebox/sports/soccer_timeline/red-card-right.svg" alt="">
+
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_48x48.png"
+                                alt="">
+                            <span class="nometime">Corinthians:</span>
+                            <span class="placar2">2</span>
+
+                        </div>
+                    </div>
+
+                    <!-- QUINTA LINHA DE JOGOS -->
+                    <div class="jogo1">
+                        <span class="nomecamp">Copa Libertadores</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">27/04</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/RcV0dugMqZ0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/YO1impuFJT2hex6wvCd9Pw_48x48.png"
+                                alt="">
+                            <div class="nometime">Boca Juniors:</div>
+                            <div class="placar">2</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">0</span>
+                        </div>
+                    </div>
+
+                </div> <!-- CONTAINER DOS JOGOS -->
+
+
+                <!-- JOGOS DE MAIO -->
+
+                <div id="div_jogos_maio" class="container_jogos" style="display: none;">
+
+                    <!-- PRIMEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">01/05</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/lMyw2zn1Z4cdkaxKJWnsQw_48x48.png"
+                                alt="">
+                            <div class="nometime">Bragantino:</div>
+                            <div class="placar">1</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">1</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Copa Libertadores</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">04/05</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/ynROVMZ1LOQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">5</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/n7PctzbrK3SsQvI81bU9DA_48x48.png"
+                                alt="">
+                            <span class="nometime">The Strongest:</span>
+                            <span class="placar2">0</span>
+                        </div>
+
+                    </div>
+
+                    <!-- SEGUNDA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">06/05</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/WVAh_L7IWTI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png"
+                                alt="">
+                            <div class="nometime">Palmeiras:</div>
+                            <div class="placar">3</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">2</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Paulista</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">09/05</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/4oNlA1HAKmQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">2</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/YuWrO9PytWJ3Hsc3GFD6PQ_48x48.png"
+                                alt="">
+                            <span class="nometime">São Bento:</span>
+                            <span class="placar2">0</span>
+                        </div>
+                    </div>
+
+                    <!-- TERCEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Copa Libertadores</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">11/05</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/aYV_ri4bCTM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">1</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/YO1impuFJT2hex6wvCd9Pw_48x48.png"
+                                alt="">
+                            <span class="nometime">Boca Juniors:</span>
+                            <span class="placar2">0</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Copa Libertadores</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">18/05</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/XxDeFdxOEdI"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/n7PctzbrK3SsQvI81bU9DA_48x48.png"
+                                alt="">
+                            <div class="nometime">The Strongest:</div>
+                            <div class="placar">2</div>
+                            <img src="https://ssl.gstatic.com/onebox/sports/soccer_timeline/red-card-right.svg" alt="">
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">1</span>
+                            <img src="https://ssl.gstatic.com/onebox/sports/soccer_timeline/red-card-right.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- QUARTA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Copa Libertadores</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">26/05</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/VmZSTrJsYeA"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/snzD6Ep_orwAcAA5c5sPNw_48x48.png"
+                                alt="">
+                            <div class="nometime">Barcelona SC:</div>
+                            <div class="placar">3</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">1</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Copa Libertadores</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">29/05</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/43UxNIsnhHs"
+                                                    title="YouTube video player" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/nIdbR6qIUDyZUBO9vojSPw_48x48.png"
+                                alt="">
+                            <div class="nometime">Bahia:</div>
+                            <div class="placar">3</div>
+
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">0</span>
+
+                        </div>
+                    </div>
+
+                </div> <!-- CONTAINER DOS JOGOS -->
+
+
+
+
+
+                <!-- JOGOS DE JUNHO -->
+
+                <div id="div_jogos_junho" class="container_jogos" style="display: block;">
+
+                    <!-- PRIMEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Copa do Brasil</span>
+                        <span class="fim">FIM</span><br>
+                        <span class="data">01/06</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/nbJ8QtKzV9M"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/vsksTb7C-i3371bzVpcU_Q_48x48.png"
+                                alt="">
+                            <div class="nometime">Cianorte:</div>
+                            <div class="placar">0</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2">2</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="fim">Fim</span><br>
+                        <span class="hora">05/06</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/Ldu1ViQFecc?start=8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">3</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/mSl0cz3i2t8uv4zcprobOg_48x48.png"
+                                alt="">
+                            <span class="nometime">Ceará SC:</span>
+                            <span class="placar2">1</span>
+                        </div>
+
+                    </div>
+
+                    <!-- SEGUNDA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Copa do Brasil</span>
+                        <span class="fim">Fim</span><br>
+                        <span class="hora">08/06</span><br>
+                        <div class="video">
+                            <iframe width="175" height="100" src="https://www.youtube.com/embed/LRSoLgQh6wY"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos:</div>
+                            <div class="placar">1</div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/vsksTb7C-i3371bzVpcU_Q_48x48.png"
+                                alt="">
+                            <span class="nometime">Cianorte:</span>
+                            <span class="placar2">0</span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">12/06</span><br>
+                        <span class="data">19:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/JrXw-m4Dov0gE2Sh6XJQMQ_48x48.png"
+                                alt="">
+                            <span class="nometime">Juventude</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <!-- TERCEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">17/06</span><br>
+                        <span class="data">19:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/fCMxMMDF2AZPU7LzYKSlig_48x48.png"
+                                alt="">
+                            <div class="nometime">Fluminense</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">20/06</span><br>
+                        <span class="data">18:15</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                                    title="YouTube video player" frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                    allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/4w2Z97Hf9CSOqICK3a8AxQ_48x48.png"
+                                alt="">
+                            <span class="nometime">São Paulo</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <!-- QUARTA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">23/06</span><br>
+                        <span class="data">20:30</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_48x48.png"
+                                alt="">
+                            <div class="nometime">Grêmio</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos:</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">27/06</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                                    title="YouTube video player" frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                    allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_48x48.png"
+                                alt="">
+                            <span class="nometime">Atlético-MG</span>
+                            <span class="placar2"></span>
+
+                        </div>
+                    </div>
+
+                    <!-- QUINTA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">30/06</span><br>
+                        <span class="data">20:30</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/u9Ydy0qt6JJjWhTaI6r10A_48x48.png"
+                                alt="">
+                            <span class="nometime">Sport Recife</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                </div> <!-- CONTAINER DOS JOGOS -->
+
+
+                <!-- JOGOS DE JULHO -->
+
+                <div id="div_jogos_julho" class="container_jogos" style="display: none;">
+
+                    <!-- PRIMEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro </span>
+                        <span class="hora">04/07</span><br>
+                        <span class="data">11:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/ZFsHqGsKNQPlCQjZ4Lu-EQ_48x48.png"
+                                alt="">
+                            <div class="nometime">América-MG</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">07/07</span><br>
+                        <span class="data">19:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/LtpA9v-CQ_Qs2bgWVdDXxQ_48x48.png"
+                                alt="">
+                            <span class="nometime">Athletico-PR</span>
+                            <span class="placar2"></span>
+                        </div>
+
+                    </div>
+
+                    <!-- SEGUNDA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">11/07</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png"
+                                alt="">
+                            <div class="nometime">Palmeiras</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Copa Sul-Americana</span>
+                        <span class="hora">14/07</span><br>
+                        <span class="data">A confirmar</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/YkuS0LD4UowC0MDzpKqZXw_48x48.png"
+                                alt="">
+                            <span class="nometime">Independiente</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <!-- TERCEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">18/07</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/lMyw2zn1Z4cdkaxKJWnsQw_48x48.png"
+                                alt="">
+                            <div class="nometime">Bragantino</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Copa Sul-Americana</span>
+                        <span class="hora">21/07</span><br>
+                        <span class="data">A confirmar</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                                    title="YouTube video player" frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                    allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/YkuS0LD4UowC0MDzpKqZXw_48x48.png"
+                                alt="">
+                            <div class="nometime">Independiente</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <!-- QUARTA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">25/07</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/9mqMGndwoR9og_Z0uEl2kw_48x48.png"
+                                alt="">
+                            <span class="nometime">Atlético-GO</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                </div> <!-- CONTAINER DOS JOGOS -->
+
+                <!-- JOGOS DE AGOSTO -->
+
+                <div id="div_jogos_agosto" class="container_jogos" style="display: none;">
+
+                    <!-- PRIMEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro </span>
+                        <span class="hora">01/08</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/cZ4ga5Fdqe3Pd-dEcpjUmg_48x48.png"
+                                alt="">
+                            <div class="nometime">Chapecoense</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">08/08</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_48x48.png"
+                                alt="">
+                            <span class="nometime">Corinthians</span>
+                            <span class="placar2"></span>
+                        </div>
+
+                    </div>
+
+                    <!-- SEGUNDA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">15/08</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/me10ephzRxdj45zVq1Risg_48x48.png"
+                                alt="">
+                            <div class="nometime">Fortaleza</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">22/08</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/OWVFKuHrQuf4q2Wk0hEmSA_48x48.png"
+                                alt="">
+                            <span class="nometime">Internacional</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <!-- TERCEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">29/08</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png"
+                                alt="">
+                            <span class="nometime">Flamengo</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                </div> <!-- CONTAINER DOS JOGOS -->
+
+
+
+                <!-- JOGOS DE SETEMBRO -->
+
+                <div id="div_jogos_setembro" class="container_jogos" style="display: none;">
+
+                    <!-- PRIMEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro </span>
+                        <span class="hora">05/09</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/j6U8Rgt_6yyf0Egs9nREXw_48x48.png"
+                                alt="">
+                            <div class="nometime">Cuiabá</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">12/09</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/nIdbR6qIUDyZUBO9vojSPw_48x48.png"
+                                alt="">
+                            <span class="nometime">Bahia</span>
+                            <span class="placar2"></span>
+                        </div>
+
+                    </div>
+
+                    <!-- SEGUNDA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">19/09</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/mSl0cz3i2t8uv4zcprobOg_48x48.png"
+                                alt="">
+                            <div class="nometime">Ceará SC</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">26/09</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/JrXw-m4Dov0gE2Sh6XJQMQ_48x48.png"
+                                alt="">
+                            <div class="nometime">Juventude</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                </div> <!-- CONTAINER DOS JOGOS -->
+
+
+                <!-- JOGOS DE OUTUBRO -->
+
+                <div id="div_jogos_outubro" class="container_jogos" style="display: none;">
+
+                    <!-- PRIMEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro </span>
+                        <span class="hora">03/10</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/fCMxMMDF2AZPU7LzYKSlig_48x48.png"
+                                alt="">
+                            <span class="nometime">Fluminense</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">06/10</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/4w2Z97Hf9CSOqICK3a8AxQ_48x48.png"
+                                alt="">
+                            <div class="nometime">São Paulo</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+
+                    </div>
+
+                    <!-- SEGUNDA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">10/10</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_48x48.png"
+                                alt="">
+                            <span class="nometime">Grêmio</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">13/10</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/q9fhEsgpuyRq58OgmSndcQ_48x48.png"
+                                alt="">
+                            <div class="nometime">Atlético-MG</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- TERCEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">17/10</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/u9Ydy0qt6JJjWhTaI6r10A_48x48.png"
+                                alt="">
+                            <div class="nometime">Sport Recife</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">24/10</span><br>
+                        <span class="data">16:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/ZFsHqGsKNQPlCQjZ4Lu-EQ_48x48.png"
+                                alt="">
+                            <span class="nometime">América-MG</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- QUARTA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">31/10</span><br>
+                        <span class="data">17:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/LtpA9v-CQ_Qs2bgWVdDXxQ_48x48.png"
+                                alt="">
+                            <div class="nometime">Athletico-PR</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                </div> <!-- CONTAINER DOS JOGOS -->
+
+
+
+
+                 <!-- JOGOS DE NOVEMBRO -->
+
+                 <div id="div_jogos_novembro" class="container_jogos" style="display: none;">
+
+                    <!-- PRIMEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro </span>
+                        <span class="hora">07/11</span><br>
+                        <span class="data">17:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_48x48.png"
+                                alt="">
+                            <span class="nometime">Palmeiras</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">10/11</span><br>
+                        <span class="data">17:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/lMyw2zn1Z4cdkaxKJWnsQw_48x48.png"
+                                alt="">
+                            <span class="nometime">Bragantino</span>
+                            <span class="placar2"></span>
+                        </div>
+
+                    </div>
+
+                    <!-- SEGUNDA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">14/11</span><br>
+                        <span class="data">17:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/9mqMGndwoR9og_Z0uEl2kw_48x48.png"
+                                alt="">
+                            <div class="nometime">Atlético-GO</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">17/11</span><br>
+                        <span class="data">17:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/cZ4ga5Fdqe3Pd-dEcpjUmg_48x48.png"
+                                alt="">
+                            <span class="nometime">Chapecoense</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- TERCEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">21/11</span><br>
+                        <span class="data">17:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_48x48.png"
+                                alt="">
+                            <div class="nometime">Corinthians</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">24/11</span><br>
+                        <span class="data">17:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/me10ephzRxdj45zVq1Risg_48x48.png"
+                                alt="">
+                            <span class="nometime">Fortaleza</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+
+                    <!-- QUARTA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">28/11</span><br>
+                        <span class="data">17:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/OWVFKuHrQuf4q2Wk0hEmSA_48x48.png"
+                                alt="">
+                            <div class="nometime">Internacional</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                </div> <!-- CONTAINER DOS JOGOS -->
+
+
+                <!-- JOGOS DE DEZEMBRO -->
+
+                <div id="div_jogos_dezembro" class="container_jogos" style="display: none;">
+
+                    <!-- PRIMEIRA LINHA DE JOGOS -->
+
+                    <div class="jogo1">
+                        <span class="nomecamp">Campeonato Brasileiro </span>
+                        <span class="hora">01/12</span><br>
+                        <span class="data">17:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/orE554NToSkH6nuwofe7Yg_48x48.png"
+                                alt="">
+                            <div class="nometime">Flamengo</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <span class="nometime">Santos</span>
+                            <span class="placar2"></span>
+                        </div>
+                    </div>
+
+                    <div class="jogo2">
+                        <span class="nomecamp">Campeonato Brasileiro</span>
+                        <span class="hora">05/12</span><br>
+                        <span class="data">17:00</span><br>
+                        <div class="video">
+                            <!-- <iframe width="175" height="100" src="https://www.youtube.com/embed/mb14tE81dws"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe> -->
+                        </div>
+
+                        <div class="time1">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/VHdNOT6wWOw_vJ38GMjMzg_48x48.png"
+                                alt="">
+                            <div class="nometime">Santos</div>
+                            <div class="placar"></div>
+                        </div>
+
+                        <div class="time2">
+                            <img class="logo"
+                                src="https://ssl.gstatic.com/onebox/media/sports/logos/j6U8Rgt_6yyf0Egs9nREXw_48x48.png"
+                                alt="">
+                            <span class="nometime">Cuiabá</span>
+                            <span class="placar2"></span>
+                        </div>
+
+                    </div>
+
+                </div> <!-- CONTAINER DOS JOGOS -->
+
+
+            </div>
+        </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<script>
+
+    // ALTERAR MÊS (FEVEREIRO)
+    function fevereiroe() {
+        alert("A TEMPORADA 2021 COMEÇA AQUI")
+
+    }
+    function fevereirod() {
+        div_fevereiro.style.display = "none";
+        div_marco.style.display = "flex";
+
+        div_jogos_fevereiro.style.display = "none";
+        div_jogos_marco.style.display = "block";
+
+    }
+
+    // ALTERAR MÊS (MARÇO)
+    function marcoe() {
+        div_marco.style.display = "none";
+        div_fevereiro.style.display = "flex";
+
+        div_jogos_marco.style.display = "none";
+        div_jogos_fevereiro.style.display = "block";
+
+    }
+    function marcod() {
+        div_marco.style.display = "none";
+        div_abril.style.display = "flex";
+
+        div_jogos_marco.style.display = "none";
+        div_jogos_abril.style.display = "block";
+
+    }
+
+    // ALTERAR MÊS (ABRIL)
+    function abrile() {
+        div_abril.style.display = "none";
+        div_marco.style.display = "flex";
+
+        div_jogos_abril.style.display = "none";
+        div_jogos_marco.style.display = "block";
+
+    }
+    function abrild() {
+        div_abril.style.display = "none";
+        div_maio.style.display = "flex";
+
+        div_jogos_abril.style.display = "none";
+        div_jogos_maio.style.display = "block";
+
+    }
+
+    // ALTERAR MÊS (MAIO)
+    function maioe() {
+        div_maio.style.display = "none";
+        div_abril.style.display = "flex";
+
+        div_jogos_maio.style.display = "none";
+        div_jogos_abril.style.display = "block";
+
+    }
+    function maiod() {
+        div_maio.style.display = "none";
+        div_junho.style.display = "flex";
+
+        div_jogos_maio.style.display = "none";
+        div_jogos_junho.style.display = "block";
+
+    }
+
+    // ALTERAR MÊS (JUNHO)
+    function junhoe() {
+        div_junho.style.display = "none";
+        div_maio.style.display = "flex";
+
+        div_jogos_junho.style.display = "none";
+        div_jogos_maio.style.display = "block";
+
+    }
+    function junhod() {
+        div_junho.style.display = "none";
+        div_julho.style.display = "flex";
+
+        div_jogos_junho.style.display = "none";
+        div_jogos_julho.style.display = "block";
+
+    }
+
+    // ALTERAR MÊS (JULHO)
+    function julhoe() {
+        div_julho.style.display = "none";
+        div_junho.style.display = "flex";
+
+        div_jogos_julho.style.display = "none";
+        div_jogos_junho.style.display = "block";
+
+    }
+    function julhod() {
+        div_julho.style.display = "none";
+        div_agosto.style.display = "flex";
+
+        div_jogos_julho.style.display = "none";
+        div_jogos_agosto.style.display = "block";
+
+    }
+
+    // ALTERAR MÊS (AGOSTO)
+    function agostoe() {
+        div_agosto.style.display = "none";
+        div_julho.style.display = "flex";
+
+        div_jogos_agosto.style.display = "none";
+        div_jogos_julho.style.display = "block";
+
+    }
+    function agostod() {
+        div_agosto.style.display = "none";
+        div_setembro.style.display = "flex";
+
+        div_jogos_agosto.style.display = "none";
+        div_jogos_setembro.style.display = "block";
+
+    }
+
+    // ALTERAR MÊS (SETEMBRO)
+    function setembroe() {
+        div_setembro.style.display = "none";
+        div_agosto.style.display = "flex";
+
+        div_jogos_setembro.style.display = "none";
+        div_jogos_agosto.style.display = "block";
+
+    }
+    function setembrod() {
+        div_setembro.style.display = "none";
+        div_outubro.style.display = "flex";
+
+        div_jogos_setembro.style.display = "none";
+        div_jogos_outubro.style.display = "block";
+
+    }
+
+    // ALTERAR MÊS (OUTUBRO)
+    function outubroe() {
+        div_outubro.style.display = "none";
+        div_setembro.style.display = "flex";
+
+        div_jogos_outubro.style.display = "none";
+        div_jogos_setembro.style.display = "block";
+
+    }
+    function outubrod() {
+        div_outubro.style.display = "none";
+        div_novembro.style.display = "flex";
+
+        div_jogos_outubro.style.display = "none";
+        div_jogos_novembro.style.display = "block";
+
+    }
+
+    // ALTERAR MÊS (NOVEMBRO)
+    function novembroe() {
+        div_novembro.style.display = "none";
+        div_outubro.style.display = "flex";
+
+        div_jogos_novembro.style.display = "none";
+        div_jogos_outubro.style.display = "block";
+
+    }
+    function novembrod() {
+        div_novembro.style.display = "none";
+        div_dezembro.style.display = "flex";
+
+        div_jogos_novembro.style.display = "none";
+        div_jogos_dezembro.style.display = "block";
+
+    }
+f
+    // ALTERAR MÊS (NOVEMBRO)
+    function dezembroe() {
+        div_dezembro.style.display = "none";
+        div_novembro.style.display = "flex";
+
+        div_jogos_dezembro.style.display = "none";
+        div_jogos_novembro.style.display = "block";
+
+    }
+    function dezembrod() {
+        alert("Aguarde uma atualização no calendário")
+
+    }
+
+
+</script>

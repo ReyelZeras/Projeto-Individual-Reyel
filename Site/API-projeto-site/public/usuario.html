@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/usuario.css">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <title>Perfil</title>
+</head>
+
+<body onload="dadosjogador(sessionStorage.jogadorFavorito_usuario_meuapp)">
+
+
+    <div class="display" id="displayU">
+        <div id="menu-lateral">
+            <div id="logo"><img src="./imagens/logo.png" alt=""></div>
+
+            <a href="index.html" class="link">
+                <div id="menu-home" class="icone-lateral"><img src="./imagens/icones/home.svg" alt=""> <span
+                        id="txt-tit1">INÍCIO</span></div>
+            </a>
+
+            <a href="jogos.html" class="link">
+                <div id="menu-quadra" class="icone-lateral"><img src="./imagens/icones/quadra.svg" alt=""><span
+                        id="txt-tit2">JOGOS</span></div>
+            </a>
+
+            <a href="noticias.html" class="link">
+                <div id="menu-news" class="icone-lateral"><img src="./imagens/icones/newspaper.svg" alt=""><span
+                        id="txt-tit3">NOTÍCIAS</span> </div>
+            </a>
+
+            <a href="usuario.html" class="link">
+                <div id="menu-perfil" class="icone-lateral"><img src="./imagens/icones/perfil.svg" alt=""><span
+                        id="txt-tit4">PERFIL</span></div>
+            </a>
+        </div>
+
+        <div class="fundo">
+
+            <div class="div_img" id="div_img1">
+
+            </div>
+            <div class="info_user">Nome: <b id="b_nome"></b></div><br>
+            <div class="info_user">User: <b id="b_user"></b></div><br>
+            <div class="info_user">Data de Nascimento: <b id="b_dataNasc"></div></b>
+
+            <div class="div_btn">
+                <a href="#" class="highlight" onclick="logoff()"><button class="btn_sair">Sair</button></a>
+            </div>
+
+        </div>
+        <div class="jogadorfav">
+            <h1>JOGADOR FAVORITO</h1>
+            <div id="div_imgJF" class="div_imgfav">
+            </div>
+
+            <div class="dadosjogador">
+                <div class="margem"><img src="https://image.flaticon.com/icons/png/512/1828/1828439.png" alt="">
+                    <div class="dados">Nome do
+                        Jogador:
+                        <span id="span_nomeJ"></span>
+                    </div>
+                </div>
+
+                <div class="margem"><img
+                        src="https://ssl.gstatic.com/onebox/sports/soccer_timeline/soccer-ball-retina.png" alt="">
+                    <div class="dados">
+                        Gols:
+                        <span id="span_gols"></span>
+                    </div>
+                </div>
+
+                <div class="margem"><img src="https://image.flaticon.com/icons/png/512/568/568841.png" alt="">
+                    <div class="dados">Jogos:
+                        <span id="span_jogos"></span>
+                    </div>
+                </div>
+
+                <div class="margem"><img src="https://image.flaticon.com/icons/png/512/933/933755.png" alt="">
+                    <div class="dados">Assistências:
+                        <span id="span_assistencias"></span>
+                    </div>
+                </div>
+
+                <div class="margem"><img
+                        src="https://ssl.gstatic.com/onebox/sports/soccer_timeline/yellow-card-right.svg" alt="">
+                    <div class="dados">
+                        Cartões amarelos:
+                        <span id="span_cartoesa"></span>
+                    </div>
+                </div>
+                <div class="margem"><img src="https://ssl.gstatic.com/onebox/sports/soccer_timeline/red-card-right.svg"
+                        alt="">
+                    <div class="dados">
+                        Cartões vermelhos:
+                        <span id="span_cartoesv"></span>
+                    </div>
+                </div>
+                <div class="margem"><img src="https://image.flaticon.com/icons/png/512/851/851026.png" alt="">
+                    <div class="dados">
+                        Número Camisa:
+                        <span id="span_camisa"></span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- <div class="jogadorAlet">
+        <button>Tire um jogador aleatório</button> 
+        <div id="result"></div>
+     </div> -->
+    <div style="display: none;" class="extra">
+        <div id="div_erro" class="msg_erro">
+        </div>
+        <img src="imagens/icones/aguarde.gif" id="img_aguarde">
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+
+    verificar_autenticacao();
+
+
+
+
+    function dadosjogador(jogadorFavorito_usuario_meuapp) {
+        fetch(`/jogadores/dados/${jogadorFavorito_usuario_meuapp}`, {
+            method: "GET"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+                resposta.json().then(json => {
+                    var nomeJ = json.nome;
+                    var gols = json.gols;
+                    var jogos = json.jogos;
+                    var assistencias = json.assistencias;
+                    var amarelos = json.amarelos;;
+                    var vermelhos = json.vermelhos;
+                    var camisa = json.camisa;
+                    span_nomeJ.innerHTML = nomeJ;
+                    span_gols.innerHTML = gols;
+                    span_jogos.innerHTML = jogos;
+                    span_assistencias.innerHTML = assistencias;
+                    span_cartoesa.innerHTML = amarelos;
+                    span_cartoesv.innerHTML = vermelhos;
+                    span_camisa.innerHTML = camisa;
+
+
+                    var jogadoresCamisa = ["34", "21", "28", "14", "3", "5", "7", "20", "11", "9", "30"];
+
+                    for (var index = 0; index < jogadoresCamisa.length; index++) {
+
+                        if (camisa == jogadoresCamisa[index]) {
+                            div_imgJF.innerHTML = `<img src="imagens/jogadores/${jogadoresCamisa[index]}.png" class="img_jogadorfav">`;
+                            break;
+                        };
+
+                    };
+
+
+
+                })
+            } else {
+
+                console.log('Erro nos dados');
+                response.text().then(function (resposta) {
+
+                });
+
+
+            }
+
+
+        });
+
+        return false;
+    }
+
+
+    // function aleatorio(){
+    //     var lengthAleatorio = parseInt((Math.random() * 11));
+    //     var jogadorFavorito = sessionStorage.jogadorFavorito_usuario_meuapp;
+    //     var jogadores = ["34", "21", "28", "14", "3", "5", "7", "20", "11", "9", "30"];
+
+
+    //     if (jogadores[lengthAleatorio] == jogadorFavorito) {
+    //         div.innerHTML += `Parabéns! Você tirou o seu jogador favorito!`
+    //     }
+
+
+
+    // }
+
+
+
+</script>

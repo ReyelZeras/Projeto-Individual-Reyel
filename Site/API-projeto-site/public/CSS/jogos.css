@@ -1,0 +1,429 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    /* height: 100%; */
+
+}
+.link{
+    text-decoration: none;
+}
+
+/* Página inteira */
+#conteinergeral {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 650px;
+    display: flex;
+}
+
+/* Menu lateral (logo e botões) */
+#menu-lateral {
+    background-color: black;
+    padding: 20px 20px 0 20px;
+    height: 97%;
+    width: 10%;
+}
+
+/* Logo */
+#logo img {
+    width: 100px;
+}
+
+#logo {
+    margin-bottom: 50px;
+
+}
+
+/* icone-lateral (Imagem e Texto com animação) */
+.icone-lateral {
+    /* background-color: rgba(255, 255, 255, 0.651); */
+    margin: 10px;
+    padding: 10px;
+}
+
+.icone-lateral img {
+    width: 60px;
+}
+
+
+#menu-lateral img {
+    cursor: pointer;
+
+}
+
+/* Botão início */
+#menu-home img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#menu-home {
+    background-color: #88782100 ;
+    width: 185px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    color: rgba(255, 255, 0, 0);
+    font-weight: 900;
+    margin-bottom: 40px;
+    
+}
+
+#txt-tit1 {
+    padding-top: 10px;
+}
+
+/* Botão jogos */
+#menu-quadra img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit2 {
+    padding-top: 10px;
+}
+
+#menu-quadra {
+    background-color: #88782100 ;
+    width: 180px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+
+}
+
+/* Botão jogos */
+#menu-news img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit3 {
+    padding-top: 10px;
+}
+
+#menu-news {
+    background-color: #88782100 ;
+    width: 225px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Botão perfil */
+#menu-perfil img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit4 {
+    padding-top: 5px;
+}
+
+#menu-perfil {
+    background-color: #88782100 ;
+    width: 205px;
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+
+/* HOVER MENU LATERAL */
+/* Animação botão início */
+#menu-home:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão jogos */
+#menu-quadra:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão notícias */
+#menu-news:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão perfil */
+#menu-perfil:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+/* FIM HOVER MENU LATERAL */
+
+
+/* Página inicial */
+
+#apresentacao {
+    background-color: white;
+    /* background-image: url(../imagens/jogos.jpg) ; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Patrocinadores */
+#patroc {
+    margin-left: 280px ;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    display: flex;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+    border-radius: 0  0  0 20px;
+    /* text-align: right; */
+}
+
+#patroc img {
+    width: 50px;
+    margin: 10px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+
+#a {
+    margin-left: 5px;
+}
+
+#b {
+    padding-top: 12px;
+}
+
+#c{
+    padding-top: 17px;
+}
+
+#d{
+    padding-top: 15px; 
+}
+
+#e{
+    padding-top: 12px;
+}
+
+#f{
+    padding-top: 12px;
+}
+
+#g{
+    padding-top: 18px;
+}
+
+#h{
+    padding-top: 10px;
+}
+
+#i{
+    padding-top: 15px;
+}
+
+#j{
+    margin-right: 5px;
+}
+/* Fim patrocinadores */
+
+
+/* Calendário */
+
+.mes{
+    margin-top: 4%;
+    /* background-color: blue; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+/* #h1_mes{
+    background-color: crimson;
+    height: 50px;
+    width: 50px;
+    
+} */
+
+.seta_e{
+    width: 80px;
+    height: 100px;
+    float: left;
+    margin-left: 5%;
+}
+.seta_d{
+    width: 80px;
+    height: 100px;
+    float: right;
+    margin-right: 5%;
+
+}
+
+.seta_d img{
+    height: 80px;
+    /* float: right; */
+    cursor: pointer;
+
+}
+.seta_e img{
+    height: 80px;
+    cursor: pointer;
+
+    /* float: left; */
+
+}
+
+/* Fim Calendário */
+
+/* JOGOS */
+
+.container_jogos{
+margin-top: 2%;
+width: 85%;
+height: 60%;
+/* background-color: red; */
+margin-left: 10%;
+/* text-align: center; */
+overflow-y: scroll;
+}
+
+.jogo1{
+    float: left;
+    height: 150px;
+    width: 50%;
+    border-bottom: solid 1px black;
+    margin-top: 5px;
+    transform: scale(1.0);
+    transition: 0.5s;
+    /* border-left: solid 1px black; */
+
+
+    /* border-right: solid 1px black; */
+    /* background-color: violet; */
+}
+.nomecamp{
+    float: left;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.fim{
+    float: right;
+    font-weight: 600;
+    margin-right: 6%;
+
+}
+.hora{
+    float: right;
+    font-weight: 600;
+    margin-right: 4%;
+
+}
+.data{
+    float: right;
+    font-weight: 600;
+    margin-right: 4%;
+
+
+}
+.jogo2{
+    /* margin-left: 5px; */
+    border-bottom: solid 1px black;
+    /* border-right: solid 1px black; */
+
+    margin-top: 5px;
+    float: left;
+    height: 150px;
+    width: 48%;
+    border-left: solid 1px black;
+    /* transform: scale(0.9);
+    transition: 0.5s; */
+    /* background-color: yellow; */
+}
+
+.jogo2:hover{
+    background-color: rgb(218, 214, 214);
+}
+.jogo1:hover{
+    background-color: rgb(218, 214, 214);
+
+    
+}
+
+.logo{
+    margin-left: 10px;
+    /* margin-top: 10px; */
+    width: 40px;
+    height: 40px;
+
+}
+
+.nometime{
+    /* float: left; */
+    margin-left: 30px;
+    /* margin-bottom: 105px; */
+    vertical-align: middle;
+    padding-top: 10px; 
+    font-weight: 600;
+}
+
+.time1{
+    display: flex;
+}
+.time2{
+    margin-top: 10px;
+    display: flex;
+}
+.placar{
+    padding-top: 10px; 
+    font-weight: 600;
+    margin-left: 4%;
+
+}
+.placar2{
+    padding-top: 10px; 
+    font-weight: 600;
+    margin-left: 4%;
+
+}
+
+.video{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+}
+
+.video iframe{
+    border-radius: 5px;
+}
+
+
+/* 
+
+ */

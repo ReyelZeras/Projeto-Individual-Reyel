@@ -1,0 +1,395 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+
+
+}
+
+.display{
+    height: 100%;
+    display: flex;
+}
+/* Menu lateral (logo e botões) */
+#menu-lateral {
+    background-color: black;
+    /* padding: 20px 0px 0px 20px; */
+    padding-left: 20px;
+    min-height: 100%;
+    width: 10%;
+    
+}
+
+/* Logo */
+#logo img {
+    width: 100px;
+}
+
+#logo {
+    padding-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+/* icone-lateral (Imagem e Texto com animação) */
+.icone-lateral {
+    /* background-color: rgba(255, 255, 255, 0.651); */
+    margin: 10px;
+    padding: 10px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.icone-lateral img {
+    width: 60px;
+}
+
+
+#menu-lateral img {
+    cursor: pointer;
+
+}
+
+/* Botão início */
+#menu-home img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#menu-home {
+    background-color: #88782100 ;
+    width: 185px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    color: rgba(255, 255, 0, 0);
+    font-weight: 900;
+    margin-bottom: 40px;
+    
+}
+
+#txt-tit1 {
+    padding-top: 10px;
+}
+
+/* Botão jogos */
+#menu-quadra img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit2 {
+    padding-top: 10px;
+}
+
+#menu-quadra {
+    background-color: #88782100 ;
+    width: 180px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Botão notícias */
+#menu-news img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit3 {
+    padding-top: 10px;
+}
+
+#menu-news {
+    background-color: #88782100 ;
+    width: 225px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Botão perfil */
+#menu-perfil img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit4 {
+    padding-top: 5px;
+}
+
+#menu-perfil {
+    background-color: #88782100 ;
+    width: 205px;
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+
+/* HOVER MENU LATERAL */
+/* Animação botão início */
+#menu-home:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão jogos */
+#menu-quadra:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão notícias */
+#menu-news:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão perfil */
+#menu-perfil:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+/* FIM HOVER MENU LATERAL */
+
+
+
+
+.conteinerInferior {
+    /* background-color: wheat; */
+    width: 1200px;
+    margin: auto;
+    margin-left: 120px;
+    overflow-y: scroll;
+}
+
+.cabecalho {
+    height: 70px;
+    /* background-color: purple; */
+}
+
+.noticiaTitulo {
+    display: flex;
+    width: 15%;
+    /* background-color: teal; */
+    float: left;
+    
+    font-weight: normal;
+    color: #dca93f;
+}
+
+.voltar{
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.linhaDourada {
+    height: 5px;
+    background-color: #dca93f;
+    width: 79%;
+    float: right;
+    margin-top: 40px;
+}
+
+.materia {
+    overflow-y: scroll;
+    width: 100%;
+    height: 500px;
+    /* background-color: red; */
+    margin-top: 18px;
+}
+.img_materia{
+    width: 100%;
+    height: 300px;
+}
+
+.titulo{
+    text-align: center;
+    color: black;
+    font-family: Verdana;
+}
+
+.sub{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.materia p {
+    font-weight: 500;
+}
+
+.img_escalacao{
+    margin-top: 30px;
+    /* margin-left: 200px; */
+    /* text-align: center; */
+    height: 100px;
+}
+.linktt{
+    float: left;
+    /* margin-left: 250px; */
+    margin-top: 20px;
+    height: 315px;
+    width: 450px;
+}
+
+.linkyt{
+    float: right;
+    margin-top: 30px;
+    margin-right: 5px;
+
+}
+
+
+.post{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.post h2{
+    color: #dca93f;
+}
+
+.btn_pub{
+    margin-top: 10px;
+    background-color: #dca93f;
+    color: #232323;
+    height: 50px;
+    width: 75px;
+    cursor: pointer;
+    font-weight: 600;
+    transform: scale(1);
+    transition: 0.5s;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+}
+
+.btn_pub:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+
+
+.textarea-padrao {
+    resize: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+
+
+/* EXTRA */
+
+.extra {
+    margin: 10px;
+    text-align: center;
+}
+
+.extra img {
+  height: 50px;
+   visibility: hidden;
+}
+
+.extra .msg_erro {
+    background-color: #dca93f; 
+    color: black; 
+    visibility: hidden;
+}
+
+.card {
+    border: 1px solid red;
+    border-radius: 10px;
+    display: block;
+    width: 35%;
+    margin: 10px 7%;
+    height: 160px;
+    float: left;
+    text-align: center;
+
+    background-color: white;
+    box-shadow:  3px 3px 5px 2px #ccc;
+    
+}
+
+/* extra */
+
+.show-on-hover {
+    color:#232323
+}
+
+.show-on-hover:hover {
+    color:white
+}
+
+.publicacao {
+    background-color: white;
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+    border: 2px solid #dca93f;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.nome {
+    float:left;
+    color:#dca93f;
+    font-weight: bold;
+    /* border: 1px solid rgb(255, 95, 37); */
+}
+
+.descricao {
+    height: auto;
+    width: auto;
+    margin-left: 13%;
+}
+
+.feed{
+    text-align: center;
+}
+
+.feed h1{
+    color: #dca93f;
+}
+
+
+
+
+
+
+
+

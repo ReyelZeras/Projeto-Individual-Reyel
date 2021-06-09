@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Santos Futebol Clube - O Maior Brasileiro do Mundo</title>
+</head>
+
+<body onload="gerarGrafico()">
+
+    <div id="conteinergeral">
+
+        <div id="menu-lateral">
+            <div id="logo"><img src="./imagens/logo.png" alt=""></div>
+
+            <a href="index.html" class="link">
+                <div id="menu-home" class="icone-lateral"><img src="./imagens/icones/home.svg" alt=""> <span
+                        id="txt-tit1">INÍCIO</span></div>
+            </a>
+
+            <a href="jogos.html" class="link">
+                <div id="menu-quadra" class="icone-lateral"><img src="./imagens/icones/quadra.svg" alt=""><span
+                        id="txt-tit2">JOGOS</span></div>
+            </a>
+
+            <a href="noticias.html" class="link">
+                <div id="menu-news" class="icone-lateral"><img src="./imagens/icones/newspaper.svg" alt=""><span
+                        id="txt-tit3">NOTÍCIAS</span> </div>
+            </a>
+
+
+            <a href="usuario.html" class="link">
+                <div id="menu-perfil" class="icone-lateral"><img src="./imagens/icones/perfil.svg" alt=""><span
+                        id="txt-tit4">PERFIL</span></div>
+            </a>
+        </div>
+
+        <div id="fundo">
+            <div id="apresentacao">
+                <div id="patroc">
+                    <div class="pratoc-img" id="a"><a href="https://www.umbro.com.br/"><img
+                                src="./imagens/Patrocinadores/umbro.jpg" alt=""></a></div>
+                    <div class="pratoc-img" id="b"><a href="https://sumup.com.br"><img
+                                src="./imagens/Patrocinadores/sumup.jpg" alt=""></a></div>
+                    <div class="pratoc-img" id="c"><a href="https://www.foxlux.com.br/"><img
+                                src="./imagens/Patrocinadores/foxlux.png" alt=""></a></div>
+                    <div class="pratoc-img" id="d"><a href="https://stxdi.com/"><img
+                                src="./imagens/Patrocinadores/stx.png" alt=""></a></div>
+                    <div class="pratoc-img" id="d"><a href="https://cartaodetodos.com.br/"><img
+                                src="./imagens/Patrocinadores/cartaodetodos.png" alt=""></a></div>
+                    <div class="pratoc-img" id="e"><a href="https://philco.com.br/"><img
+                                src="./imagens/Patrocinadores/philco.jpg" alt=""></a></div>
+                    <div class="pratoc-img" id="f"><a href="https://kodilar.com.br/"><img
+                                src="./imagens/Patrocinadores/kodilar.png" alt=""></a></div>
+                    <div class="pratoc-img" id="g"><a href="https://www.konami.com/games/la/pt/"><img
+                                src="./imagens/Patrocinadores/konami.jpg" alt=""></a></div>
+                    <div class="pratoc-img" id="h"><a href="https://www.tekbond.com.br/pt-br"><img
+                                src="./imagens/Patrocinadores/tekbond.png" alt=""></a></div>
+                    <div class="pratoc-img" id="i"><a href="https://www.oceanob2b.com/"><img
+                                src="./imagens/Patrocinadores/oceano.jpg" alt=""></a></div>
+                    <div class="pratoc-img" id="j"><a href="https://kicaldo.com.br/"><img
+                                src="./imagens/Patrocinadores/kicaldo.png" alt=""></a></div>
+                </div>
+
+                <div id="pai-redesocial">
+                    <div id="false"></div>
+                    <div id="redesocial">
+                        <div id="icone-social"><a href="https://pt-br.facebook.com/santosfc/"><img id="img_face"
+                                    src="./imagens/redesocial/facebook.svg" alt=""></a></div>
+                        <div id="icone-social"><a href="https://www.instagram.com/santosfc/?hl=pt-br"><img
+                                    id="img_insta" src="./imagens/redesocial/instagram.svg" alt=""></a></div>
+                        <div id="icone-social"><a href="https://www.youtube.com/channel/UC0uRT_armQXqds_rjTjqJ0g "><img
+                                    id="img_yt" src="./imagens/redesocial/youtube.svg" alt=""></a></div>
+                        <div id="icone-social"><a
+                                href="https://twitter.com/SantosFC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                                    id="img_tt" src="./imagens/redesocial/twitter.svg" alt=""></a></div>
+                    </div>
+                </div>
+
+                <div id="botao-login">
+                    <div id="teste1"><a href="login.html" class="link"><button>LOGIN</button></a></div>
+                    <div id="teste"><a href="cadastro.html" class="link"><button>CADASTRO</button></a></div>
+                </div>
+
+            </div>
+
+            <div class="separacao">
+                <img src="imagens/emblema.png" alt="">
+                <h2>Galeria de títulos</h2>
+            </div>
+
+            <div class="titulos">
+
+                <div class="titulo">
+                    <img class="img_titulo" src="imagens/titulos/riosp.png" alt="">
+                    <p class="nome_titulo">Torneio Rio - São Paulo</p>
+                    <p class="qtd_titulo">5</p>
+                </div>
+
+                <div class="titulo">
+                    <img class="img_titulo" src="imagens/titulos/recopamundial.png" alt="">
+                    <p class="nome_titulo">Recopa Mundial</p>
+                    <p class="qtd_titulo">1</p>
+                </div>
+
+                <div class="titulo">
+                    <img class="img_titulo" src="imagens/titulos/paulista.png" alt="">
+                    <p class="nome_titulo">Campeonato Paulista</p>
+                    <p class="qtd_titulo">22</p>
+                </div>
+
+                <div class="titulo">
+                    <img class="img_titulo" src="imagens/titulos/brasileiro.png" alt="">
+                    <p class="nome_titulo">Campeonato Brasileiro</p>
+                    <p class="qtd_titulo">8</p>
+                </div>
+
+                <div class="titulo">
+                    <img class="img_titulo" src="imagens/titulos/mundial.png" alt="">
+                    <p class="nome_titulo">Mundial Interclubes</p>
+                    <p class="qtd_titulo">2</p>
+                </div>
+
+                <div class="titulo">
+                    <img class="img_titulo" src="imagens/titulos/mundial.png" alt="">
+                    <p class="nome_titulo">Copa Libertadores da América</p>
+                    <p class="qtd_titulo">3</p>
+                </div>
+
+                <div class="titulo">
+                    <img class="img_titulo" src="imagens/titulos/copadobrasil.png" alt="">
+                    <p class="nome_titulo">Copa do Brasil</p>
+                    <p class="qtd_titulo">1</p>
+                </div>
+
+                <div class="titulo">
+                    <img class="img_titulo" src="imagens/titulos/conmebol.png" alt="">
+                    <p class="nome_titulo">Copa Conmebol</p>
+                    <p class="qtd_titulo">1</p>
+                </div>
+
+                <div class="titulo">
+                    <img class="img_titulo" src="imagens/titulos/recopasula.png" alt="">
+                    <p class="nome_titulo">Recopa Sulamericana</p>
+                    <p class="qtd_titulo">1</p>
+                </div>
+
+            </div>
+
+            <div class="loja">
+                <a class="link" target="_blank"
+                    href=https://www.santosstore.com.br/lst/lancamento-21-22?utm_source=oficial&utm_medium=SprBanner&utm_campaign=umb_Camisas2122_210414">
+                    <img src="imagens/loja.png" alt="">
+                </a>
+            </div>
+
+            <div class="sociorei">
+                <a class="link" target="_blank" href="https://sociorei.com/">
+                    <img onclick="socio()" src="imagens/sociorei.jpg" alt="">
+                </a>
+            </div>
+
+
+            <div class="redes">
+                <div class="twitter">
+                    <a class="twitter-timeline" data-lang="pt" data-height="300"
+                        href="https://twitter.com/SantosFC?ref_src=twsrc%5Etfw">Tweets by SantosFC</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                    <a href="https://twitter.com/SantosFC?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                        data-size="large" data-lang="pt" data-show-count="false">Follow @SantosFC</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                </div>
+
+                <div class="spotify">
+                    <iframe src="https://open.spotify.com/embed/playlist/6YORJPYfOeaWcaOQFd5ksi" width="300"
+                        height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+
+                <div class="youtube">
+                    <iframe width="540" height="300"
+                        src="https://www.youtube.com/embed/videoseries?list=PLaKRyYHkYXN9LLDBs4OnhYcQI58utgITb"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="grafico">
+                <h1>Jogadores favoritos dos usuários</h1>
+                <canvas id="myChart" class="canvas"></canvas>
+            </div>
+
+            <div class="helpDesk">
+                <a class="link" target="_blank" href="https://omaiorbrdomundo.on.spiceworks.com/portal">
+                    <h2>Precisa de ajuda? Clique aqui para falar conosco.</h2>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+
+    function gerarGrafico() {
+        fetch("/leituras/dados", {
+            method: "GET"
+        }).then(resposta => {
+
+            if (resposta.ok) {
+                resposta.json().then(json => {
+                    const plugin = {
+                        id: 'custom_canvas_background_color',
+                        beforeDraw: (chart) => {
+                            const ctx = chart.canvas.getContext('2d');
+                            ctx.save();
+                            ctx.globalCompositeOperation = 'destination-over';
+                            ctx.fillStyle = 'white';
+                            ctx.fillRect(0, 0, chart.width, chart.height);
+                            ctx.restore();
+                        }
+                    };
+                    var myChart = new Chart(document.getElementById('myChart'), {
+
+                        type: 'bar',
+                        data: {
+                            labels: ['João Paulo', 'Pará',
+                                'Kaiky', 'Luan Peres',
+                                'Felipe Jonatan', 'Alison', 'Carlos Sanchez',
+                                'Gabriel Pirani', 'Marinho', 'Kaio Jorge', 'Lucas Braga'
+                            ],
+                            datasets: [{
+                                label: 'Quantidade de usuários por jogador favorito ',
+                                data: [json.JogadorFavorito1, json.JogadorFavorito2,
+                                json.JogadorFavorito3, json.JogadorFavorito4,
+                                json.JogadorFavorito5, json.JogadorFavorito6,
+                                json.JogadorFavorito7, json.JogadorFavorito8,
+                                json.JogadorFavorito9, json.JogadorFavorito10,
+                                json.JogadorFavorito11
+                                ],
+
+
+                                backgroundColor: [
+                                    'rgba(220, 169, 63, 1)',
+                                    'rgba(220, 169, 63, 1)',
+                                    'rgba(220, 169, 63, 1)',
+                                    'rgba(220, 169, 63, 1)',
+                                    'rgba(220, 169, 63, 1)',
+                                    'rgba(220, 169, 63, 1)',
+                                    'rgba(220, 169, 63, 1)',
+                                    'rgba(220, 169, 63, 1)',
+                                    'rgba(220, 169, 63, 1)',
+                                    'rgba(220, 169, 63, 1)',
+                                    'rgba(220, 169, 63, 1)'
+                                ],
+                                borderColor: [
+                                    'rgba(0, 0, 0, 1)',
+                                    'rgba(0, 0, 0, 1)',
+                                    'rgba(0, 0, 0, 1)',
+                                    'rgba(0, 0, 0, 1)',
+                                    'rgba(0, 0, 0, 1)',
+                                    'rgba(0, 0, 0, 1)',
+                                    'rgba(0, 0, 0, 1)',
+                                    'rgba(0, 0, 0, 1)',
+                                    'rgba(0, 0, 0, 1)',
+                                    'rgba(0, 0, 0, 1)',
+                                    'rgba(0, 0, 0, 1)'
+                                ],
+                                borderWidth: 2
+                            }]
+                        },
+                        plugins: [plugin],
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            },
+                            labels: {
+                                font: {
+                                    size: 20,
+                                    family: 'verdana'
+                                }
+                            }
+                        }
+                    });
+                })
+            } else {
+
+                console.log('Erro no gráfico');
+                response.text().then(function (resposta) {
+
+                });
+
+
+            }
+        });
+
+        return false;
+    }
+
+
+
+</script>

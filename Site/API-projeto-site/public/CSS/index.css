@@ -1,0 +1,581 @@
+body{
+  
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    /* height: 100%; */
+   /* background-color: black; */
+
+}
+.link{
+    text-decoration: none;
+}
+
+/* Página inteira */
+#conteinergeral {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 650px;
+    display: flex;
+}
+
+/* Menu lateral (logo e botões) */
+#menu-lateral {
+    background-color: black;
+    padding: 20px 20px 0 20px;
+    height: 98%;
+    width: 10%;
+}
+
+/* Logo */
+#logo img {
+    width: 100px;
+}
+
+#logo {
+    margin-bottom: 50px;
+
+}
+
+/* icone-lateral (Imagem e Texto com animação) */
+.icone-lateral {
+    /* background-color: rgba(255, 255, 255, 0.651); */
+    margin: 10px;
+    padding: 10px;
+}
+
+.icone-lateral img {
+    width: 60px;
+}
+
+
+#menu-lateral img {
+    cursor: pointer;
+
+}
+
+/* Botão início */
+#menu-home img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#menu-home {
+    background-color: #88782100 ;
+    width: 185px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    color: rgba(255, 255, 0, 0);
+    font-weight: 900;
+    margin-bottom: 40px;
+    
+}
+
+#txt-tit1 {
+    padding-top: 10px;
+}
+
+/* Botão jogos */
+#menu-quadra img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit2 {
+    padding-top: 10px;
+}
+
+#menu-quadra {
+    background-color: #88782100 ;
+    width: 180px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Botão jogos */
+#menu-news img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit3 {
+    padding-top: 10px;
+}
+
+#menu-news {
+    background-color: #88782100 ;
+    width: 225px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Botão perfil */
+#menu-perfil img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit4 {
+    padding-top: 5px;
+}
+
+#menu-perfil {
+    background-color: #88782100 ;
+    width: 205px;
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+
+/* HOVER MENU LATERAL */
+/* Animação botão início */
+#menu-home:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão jogos */
+#menu-quadra:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão notícias */
+#menu-news:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão perfil */
+#menu-perfil:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+/* FIM HOVER MENU LATERAL */
+
+
+/* Página inicial */
+
+#fundo{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+}
+
+#apresentacao {
+    background-color: black;
+    background-image: url(../imagens/OndeNascemOsRaiosHD.gif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Patrocinadores */
+#patroc {
+    margin-left: 280px ;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    display: flex;
+    border-radius: 0  0  0 20px;
+    /* text-align: right; */
+}
+
+#patroc img {
+    width: 50px;
+    margin: 10px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+
+#a {
+    margin-left: 5px;
+}
+
+#b {
+    padding-top: 12px;
+}
+
+#c{
+    padding-top: 17px;
+}
+
+#d{
+    padding-top: 15px; 
+}
+
+#e{
+    padding-top: 12px;
+}
+
+#f{
+    padding-top: 12px;
+}
+
+#g{
+    padding-top: 18px;
+}
+
+#h{
+    padding-top: 10px;
+}
+
+#i{
+    padding-top: 15px;
+}
+
+#j{
+    margin-right: 5px;
+}
+
+/* REDES SOCIAIS */
+/* Div invisívil */
+#false {
+    /* background-color: chartreuse; */
+    width: 70px;
+    color: rgba(255, 255, 255, 0);
+}
+
+#redesocial {
+    /* background-color: rgb(21, 36, 126); */
+    margin-top: 90px;
+    width: 70px;
+    height: 300px;
+    padding-left:15px;
+    padding-top: 15px;
+}
+
+#pai-redesocial {
+    display: flex;
+    justify-content: space-between;
+}
+
+#icone-social {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#img_face{
+transform: scale(1);
+transition: 0.5s;
+    
+}
+
+#img_face:hover {
+background-image: url(../imagens/redesocial/facebookC.svg);
+transform: scale(1.06);
+transition: 0.5s;
+}
+
+#img_insta{
+    transform: scale(1);
+    transition: 0.5s;
+        
+}
+
+#img_insta:hover {
+    background-image: url(../imagens/redesocial/instagramC.svg);
+    transform: scale(1.06);
+    transition: 0.5s;
+}
+
+#img_yt{
+    transform: scale(1);
+    transition: 0.5s;
+        
+    }
+
+#img_yt:hover {
+    background-image: url(../imagens/redesocial/youtubeC.svg);
+    transform: scale(1.06);
+    transition: 0.5s;
+    }
+
+#img_yt{
+    transform: scale(1);
+    transition: 0.5s;
+            
+        }
+#img_tt:hover {
+    background-image: url(../imagens/redesocial/twitterC.svg);
+    transform: scale(1.06);
+    transition: 0.5s;
+}
+
+/* FIM REDES SOCIAIS */
+
+
+/* CADASTRO E LOGIN */
+
+
+#botao-login {
+    background-color: #ffffff75;
+    margin: 0 auto;
+    padding: 0px ;
+    width: 30%;
+    height: 70px;
+    margin-top: -15%;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+}
+
+#botao-login button {
+    height: 70px;
+    background-color: rgba(255, 255, 0, 0);
+    border-radius: 10px;
+    border: 0px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.733);
+    font-size: 20px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif ; */
+}
+
+/* Login */
+#teste1 {
+    background-color:#f1af0900 ;
+    margin: 0 auto;
+    width: 90%;
+    margin-right: 3px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+/* Animação login */
+#teste1:hover{
+    background-color: #000000c0 ;
+    margin: 0 auto;
+    width: 95%;
+    /* border: 10px solid #f1af0971; */
+    -webkit-transform: scale(0.5);
+    transform: scale(1.0);
+ }
+
+/* Cadastro */
+#teste {
+    background-color: #f1af0900 ;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Animação Cadastro */
+#teste:hover{
+    background-color: #000000c0 ;
+    margin: 0 auto;
+    width: 95%;
+    /* border: 10px solid #f1af0971; */
+    -webkit-transform: scale(0.5);
+    transform: scale(1.0);
+ } 
+
+#botao-login button:hover {
+    font-size: 24px;
+    color: #dca93f;
+    /* background-color: #00ffffb0 ;
+    margin: 0 auto;
+    width: 95%;
+    border: 10px solid #00ffffb0; */
+    -webkit-transform: scale(0.5);
+    transform: scale(1.0);
+}
+
+ /* FIM LOGIN E CADASTRO */
+
+
+ /* TITÚLOS */
+
+.separacao{
+    text-align: center;
+}
+
+ .titulos{
+     /* margin-left: 80px; */
+     display: flex;
+     /* background-color: blue; */
+     /* margin-top: 10px; */
+     width: 100%;
+     height: 300px;
+     /* border-top: solid 10px #dca93f; */
+    border-bottom: solid 2px black;
+ }
+
+ .titulo{
+     height: 90%;
+     width: 109px;
+     margin-top: 10px;
+     text-align: center;
+     transform: scale(1);
+     transition: 0.5s;
+     border-right: solid 1px #dca93f;
+     margin-left: 10px;
+     padding-right: 10px;
+ }
+
+ .titulo:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+ }
+
+ .img_titulo{
+     height: 150px;
+     width: 90px;
+ }
+
+ .nome_titulo{
+    font-weight: 600;
+ }
+
+ .qtd_titulo{
+    font-weight: 600;
+ }
+
+ .loja{
+     text-align: center;
+     margin-top: 20px;
+ }
+
+.loja img{
+     width: 90%;
+     border-radius: 5px;
+     border: solid 2px black;
+     cursor: pointer;
+     transform: scale(1);
+     transition: 0.5s;
+}
+
+.loja img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.sociorei{
+    margin-left: 10px;
+    /* width: 90%;
+    height: 500px; */
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+.sociorei img{
+    border: solid 2px black;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.5s;
+}
+.sociorei img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.redes{
+    margin-top: 30px;
+    display: flex;
+
+}
+
+.twitter{
+    width: 33.33%;
+    height: 400px;
+}
+
+.twitter-timeline{
+    border-radius: 5px;
+
+}
+
+.twitter-follow-button{
+    border-radius: 5px;
+    /* text-align: center; */
+}
+
+.spotify{
+    margin-left: 2%;
+}
+.spotify iframe{
+    border-radius: 5px;
+}
+
+.youtube{
+    margin-left: 2%;
+}
+
+.youtube iframe{
+    border-radius: 5px;
+}
+
+
+.grafico{
+    border-top: solid 1px black;
+    margin-top: 15px;
+    margin-left: 50px;
+    text-align: center;
+    width: 90%;
+    height: 300px;
+    /* border: solid 2px black;
+    border-radius: 5px; */
+}
+
+.grafico h1{
+    color: #dca93f;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* .canvas{
+    text-align: center;
+    height: 200px;
+} */
+
+.helpDesk{
+    margin-top: 350px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    /* background-color: black; */
+}
+
+.helpDesk h2{
+    padding-top: 40px;
+    color: #dca93f;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    text-decoration: black;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.helpDesk h2:hover{
+    transform: scale(1.05);
+transition: 0.5s;
+}
+

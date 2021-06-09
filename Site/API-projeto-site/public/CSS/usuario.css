@@ -1,0 +1,329 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    height: 100%;
+    width: 100%;
+
+}
+
+.display{
+    height: 100%;
+    display: flex;
+    /* background-image: url(../imagens/carlos.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: center; */
+
+}
+/* Menu lateral (logo e botões) */
+#menu-lateral {
+    background-color: black;
+    /* padding: 20px 0px 0px 20px; */
+    padding-left: 20px;
+    min-height: 100%;
+    width: 10%;
+    
+}
+
+/* Logo */
+#logo img {
+    width: 100px;
+}
+
+#logo {
+    padding-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+/* icone-lateral (Imagem e Texto com animação) */
+.icone-lateral {
+    /* background-color: rgba(255, 255, 255, 0.651); */
+    margin: 10px;
+    padding: 10px;
+}
+
+.icone-lateral img {
+    width: 60px;
+}
+
+
+#menu-lateral img {
+    cursor: pointer;
+
+}
+
+/* Botão início */
+#menu-home img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#menu-home {
+    background-color: #88782100 ;
+    width: 185px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    color: rgba(255, 255, 0, 0);
+    font-weight: 900;
+    margin-bottom: 40px;
+    
+}
+
+#txt-tit1 {
+    padding-top: 10px;
+}
+
+/* Botão jogos */
+#menu-quadra img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit2 {
+    padding-top: 10px;
+}
+
+#menu-quadra {
+    background-color: #88782100 ;
+    width: 180px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Botão jogos */
+#menu-news img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit3 {
+    padding-top: 10px;
+}
+
+#menu-news {
+    background-color: #88782100 ;
+    width: 225px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Botão perfil */
+#menu-perfil img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit4 {
+    padding-top: 5px;
+}
+
+#menu-perfil {
+    background-color: #88782100 ;
+    width: 205px;
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+
+/* HOVER MENU LATERAL */
+/* Animação botão início */
+#menu-home:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão jogos */
+#menu-quadra:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão notícias */
+#menu-news:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão perfil */
+#menu-perfil:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+/* FIM HOVER MENU LATERAL */
+
+.fundo{
+    /* background-color: blue; */
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-left: 8%;
+    padding: 15px;
+    border: solid 2px black;
+    box-shadow: 3px 3px black;
+
+
+}
+
+.div_img{
+    /* width: 100%; */
+/* justify-content: space-around; */
+text-align: center;
+margin-bottom: 50px;
+}
+
+.img_usuario{
+    border: solid #dca93f 3px;
+    border-radius: 100%;
+    height: 100px;
+    box-shadow: 2px 2px 5px black;
+
+
+}
+
+.info_user{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn_sair{
+    color: white;
+    margin-top: 60px;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: #dca93f;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    transform: scale(1.0);
+    transition: 0.5s;
+    box-shadow: 2px 2px black;
+}
+.btn_sair:hover{
+transform: scale(1.15);
+transition: 0.5s;
+
+}
+
+.div_btn{
+    
+    text-align: center;
+
+}
+
+.jogadorfav{
+    /* background-color: green; */
+    margin-top: 10%;
+    margin-left: 7%;
+    padding: 15px;
+    height: 400px;
+    width: 650px;
+    border-radius: 10px;
+    border: solid 2px black;
+    box-shadow: 3px 3px black;
+
+
+    /* text-align: center; */
+    /* padding-left: 15px; */
+}
+
+.jogadorAlet{
+    float: right;
+    background-color: green;
+    margin-top: 10%;
+    margin-left: 7%;
+    padding: 15px;
+    height: 400px;
+    width: 650px;
+    border-radius: 10px;
+    border: solid 2px black;
+    box-shadow: 3px 3px black;
+    
+    /* text-align: center; */
+    /* padding-left: 15px; */
+}
+
+.jogadorfav h1{
+text-align: center;
+text-shadow: 1px 1px 2px black;
+}
+
+.img_jogadorfav {
+    border: solid #dca93f 4px;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin-right: 5px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+    
+
+.dadosjogador{
+/* background-color: yellow; */
+float: left;
+margin-left: 70px;
+width: 60%;
+height: 80%;
+/* display: inline-block; */
+}
+
+/* .dadosjogador img {
+    padding-bottom: -4px;
+
+} */
+
+.margem{
+    margin-left: 0px;
+    margin-top: 15px;
+    /* margin-bottom: 10px; */
+    font-weight: 800;
+    vertical-align: auto;
+    display: flex;
+}
+.margem img{
+    height: 24px;
+    width: 24px;
+    margin-top: 5px;
+    /* margin-top: 10px; */
+
+}
+
+.link{
+    text-decoration: none;
+}
+
+.dados{
+/* padding-bottom: 10px; */
+margin-top: 5px;
+margin-left: 10px;
+}

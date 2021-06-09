@@ -1,0 +1,393 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    height: 100%;
+    width: 100%;
+
+}
+
+.display{
+    height: 100%;
+    display: flex;
+}
+/* Menu lateral (logo e botões) */
+#menu-lateral {
+    background-color: black;
+    /* padding: 20px 0px 0px 20px; */
+    padding-left: 20px;
+    min-height: 100%;
+    width: 10%;
+    
+}
+
+/* Logo */
+#logo img {
+    width: 100px;
+}
+
+#logo {
+    padding-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+/* icone-lateral (Imagem e Texto com animação) */
+.icone-lateral {
+    margin: 10px;
+    padding: 10px;
+}
+
+.icone-lateral img {
+    width: 60px;
+}
+
+#menu-lateral img {
+    cursor: pointer;
+}
+
+/* Botão início */
+#menu-home img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#menu-home {
+    background-color: #88782100 ;
+    width: 185px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    color: rgba(255, 255, 0, 0);
+    font-weight: 900;
+    margin-bottom: 40px;
+    
+}
+
+#txt-tit1 {
+    padding-top: 10px;
+}
+
+/* Botão jogos */
+#menu-quadra img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit2 {
+    padding-top: 10px;
+}
+
+#menu-quadra {
+    background-color: #88782100 ;
+    width: 180px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Botão jogos */
+#menu-news img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit3 {
+    padding-top: 10px;
+}
+
+#menu-news {
+    background-color: #88782100 ;
+    width: 225px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Botão perfil */
+#menu-perfil img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit4 {
+    padding-top: 5px;
+}
+
+#menu-perfil {
+    background-color: #88782100 ;
+    width: 205px;
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+
+/* HOVER MENU LATERAL */
+
+/* Animação botão início */
+#menu-home:hover  {
+    background-color: #dca93f ;
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão jogos */
+#menu-quadra:hover  {
+    background-color: #dca93f ;
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão notícias */
+#menu-news:hover  {
+    background-color: #dca93f ;
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão perfil */
+
+#menu-perfil:hover  {
+    background-color: #dca93f ;
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* FIM HOVER MENU LATERAL */
+
+
+#menuNoticias {
+    filter: invert(1);
+}
+
+.conteinerInferior {
+    width: 1200px;
+    margin: auto;
+    margin-left: 120px;
+    overflow-y: scroll;
+}
+
+.cabecalho {
+    height: 70px;
+}
+
+.noticiaTitulo {
+    width: 15%;
+    float: left;
+    font-weight: normal;
+    color: #dca93f;
+    text-shadow: 0 0 1px black;
+}
+
+.linhaDourada {
+    height: 5px;
+    background-color: #dca93f;
+    width: 84.5%;
+    float: right;
+    margin-top: 40px;
+}
+
+.noticias {
+    width: 100%;
+    height: 500px;
+    /* background-color: red; */
+    margin-top: 18px;
+    overflow-y: scroll;
+}
+
+.blocodenoticias{
+    margin-bottom: 54%;
+}
+
+.noticia1 {
+    width: 50%;
+    height: 100%;
+    background-image: url("../Imagens/noticias/zanocelo.jpg");
+    background-size: cover;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow:  2px 5px 5px 1px black;
+}
+
+.noticia1:hover{
+    border-radius: 7px;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.manchete1 {
+    color: white;
+    margin-top: 400px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.noticia2 {
+    width: 45%;
+    height: 45%;
+    background-image: url("../Imagens/noticias/santosceara.jpg");
+    background-size: cover;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow:  2px 5px 5px 1px black;
+}
+
+.noticia2:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.manchete2 {
+    color: white;
+    margin-top: 185px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.noticia3 {
+    width: 45%;
+    height: 45%;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-image: url("../Imagens/noticias/ganso.jpg");
+    background-size: cover;
+    float: right;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow:  2px 3px 5px 1px black;
+}
+
+.noticia3:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.manchete3 {
+    color: white;
+    margin-top: 185px;
+    margin-left: 20px;
+    text-shadow: 4px 3px 3px black;
+}
+
+
+.noticia4 {
+    width: 50%;
+    height: 100%;
+    background-image: url("../Imagens/noticias/cianorte.jpg");
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow:  2px 5px 5px 1px black;
+}
+
+.noticia4:hover{
+    border-radius: 7px;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.manchete4 {
+    color: white;
+    margin-top: 400px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.noticia5 {
+    width: 45%;
+    height: 45%;
+    background-image: url("../Imagens/noticias/sanchez.jpg");
+    background-size: cover;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow:  2px 5px 5px 1px black;
+}
+
+.noticia5:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.manchete5 {
+    color: white;
+    margin-top: 185px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.noticia6 {
+    width: 45%;
+    height: 45%;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-image: url("../Imagens/noticias/ceara.jpg");
+    background-position-y: center;
+    background-position-x: center;
+    background-size: cover;
+    float: right;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow:  2px 3px 5px 1px black;
+}
+
+.noticia6:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.manchete6 {
+    color: white;
+    margin-top: 185px;
+    margin-left: 20px;
+    text-shadow: 4px 3px 3px black;
+}
+
+
+.separacao{
+    height: 5px;
+    width: 100%;
+    background-color: #dca93f;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.link{
+    text-decoration: none;
+}
+

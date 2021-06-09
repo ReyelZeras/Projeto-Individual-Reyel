@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/noticias.css">
+    <title>Notícias</title>
+</head>
+
+<body>
+
+    <div class="display">
+        <div id="menu-lateral">
+
+            <div id="logo"><img src="./imagens/logo.png" alt=""></div>
+
+            <a href="index.html" class="link">
+                <div id="menu-home" class="icone-lateral">
+                    <img src="./imagens/icones/home.svg" alt="">
+                    <span id="txt-tit1">INÍCIO</span>
+                </div>
+            </a>
+
+            <a href="jogos.html" class="link">
+                <div id="menu-quadra" class="icone-lateral">
+                    <img src="./imagens/icones/quadra.svg" alt="">
+                    <span id="txt-tit2">JOGOS</span>
+                </div>
+            </a>
+
+            <a href="noticias.html" class="link">
+                <div id="menu-news" class="icone-lateral">
+                    <img src="./imagens/icones/newspaper.svg" alt="">
+                    <span id="txt-tit3">NOTÍCIAS</span>
+                </div>
+            </a>
+
+            <a href="usuario.html" class="link">
+                <div id="menu-perfil" class="icone-lateral">
+                    <img src="./imagens/icones/perfil.svg" alt="">
+                    <span id="txt-tit4">PERFIL</span>
+                </div>
+            </a>
+
+        </div>
+
+
+        <div class="conteinerInferior">
+
+            <div class="cabecalho">
+                <h1 class="noticiaTitulo">NOTÍCIAS</h1>
+                <div class="linhaDourada"></div>
+            </div>
+
+            <div class="noticias">
+                <div class="blocodenoticias">
+
+                    <div class="noticia4" onclick="noticia4()">
+                        <h1 class="manchete4">Santos vence o Cianorte e se classifica às oitavas da Copa do Brasil</h1
+                            class="manchete">
+                    </div>
+
+                    <div class="noticia5" onclick="noticia5()">
+                        <h2 class="manchete5">Santos confirma renovação de Sánchez</h2>
+                    </div>
+
+                    <div class="noticia6" onclick="noticia6()">
+                        <h2 class="manchete6">Santos vence Ceará SC</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="separacao"></div>
+
+
+                <div class="blocodenoticias">
+
+                    <div class="noticia1" onclick="noticia1()">
+                        <h1 class="manchete1">Santos anuncia contratação de Zanocelo</h1>
+                    </div>
+
+                    <div class="noticia2" onclick="noticia2()">
+                        <h2 class="manchete2">Prévia: Santos x Ceará SC</h2>
+                    </div>
+
+                    <div class="noticia3" onclick="noticia3()">
+                        <h2 class="manchete3">Diniz aguarda por Ganso</h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+
+    function noticia1() {
+        window.location.href = "zanocelo.html";
+    }
+
+    function noticia2() {
+        window.location.href = "previa.html";
+    }
+
+    function noticia3() {
+        window.location.href = "ganso.html";
+    }
+
+    function noticia4() {
+        window.location.href = "cianorte.html";
+    }
+
+    function noticia5() {
+        window.location.href = "sanchez.html";
+    }
+
+    function noticia6() {
+        window.location.href = "ceara.html";
+    }
+
+
+
+
+
+</script>

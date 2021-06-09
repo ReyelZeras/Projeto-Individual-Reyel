@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+
+}
+.link{
+    text-decoration: none;
+}
+
+/* Página inteira */
+#conteinergeral {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 650px;
+    display: flex;
+}
+
+/* Menu lateral (logo e botões) */
+#menu-lateral {
+    background-color: black;
+    padding: 20px 20px 0 20px;
+    height: 97%;
+    width: 10%;
+}
+
+/* Logo */
+#logo img {
+    width: 100px;
+}
+
+#logo {
+    margin-bottom: 50px;
+
+}
+
+/* icone-lateral (Imagem e Texto com animação) */
+.icone-lateral {
+    /* background-color: rgba(255, 255, 255, 0.651); */
+    margin: 10px;
+    padding: 10px;
+}
+
+.icone-lateral img {
+    width: 60px;
+}
+
+
+#menu-lateral img {
+    cursor: pointer;
+
+}
+
+/* Botão início */
+#menu-home img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#menu-home {
+    background-color: #88782100 ;
+    width: 185px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    color: rgba(255, 255, 0, 0);
+    font-weight: 900;
+    margin-bottom: 40px;
+    
+}
+
+#txt-tit1 {
+    padding-top: 10px;
+}
+
+/* Botão jogos */
+#menu-quadra img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit2 {
+    padding-top: 10px;
+}
+
+#menu-quadra {
+    background-color: #88782100 ;
+    width: 180px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Botão jogos */
+#menu-news img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit3 {
+    padding-top: 10px;
+}
+
+#menu-news {
+    background-color: #88782100 ;
+    width: 225px;
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+/* Botão perfil */
+#menu-perfil img{
+    width: 50px;
+    padding-right:30px ;
+}
+
+#txt-tit4 {
+    padding-top: 5px;
+}
+
+#menu-perfil {
+    background-color: #88782100 ;
+    width: 205px;
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(255, 255, 0, 0);
+    margin-bottom: 40px;
+}
+
+
+/* HOVER MENU LATERAL */
+/* Animação botão início */
+#menu-home:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão jogos */
+#menu-quadra:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão notícias */
+#menu-news:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+
+/* Animação botão perfil */
+#menu-perfil:hover  {
+    background-color: #dca93f ;
+    /* width: 280px; */
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+/* FIM HOVER MENU LATERAL */
+
+
+/* Página inicial */
+
+#apresentacao {
+    background-color: black;
+    background-image: url(../imagens/pele.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* CADASTRO E LOGIN */
+
+
+#botao-login {
+    background-color: #000000c9;
+    margin: 0 auto;
+    padding: 0px ;
+    width: 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
+
+    margin-top: 4%;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+}
+
+#botao-login button {
+    height: 70px;
+    background-color: rgba(220, 169, 63, 0.938);
+    border-radius: 10px;
+    border: 0px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.733);
+    font-size: 20px;
+
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif ; */
+}
+
+
+/* INICIO MODEL CADASTRO */
+
+#forme {
+    /* background-color: blue; */
+    margin: 20px auto;
+    height: 90%;
+    width: 90%;
+
+}
+
+#form-flex1 {
+    /* background-color: yellow; */
+    justify-content: space-between;
+    display:flex;
+    margin: 0 auto;
+    width: 70%;
+}
+
+#form-flex2 {
+    /* background-color: blueviolet; */
+    display:flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+#forme input{
+    height: 20px;
+    border: 0px;
+    border-radius: 2px;
+    padding: 5px;
+    /* box-shadow: 1px 1px 30px rgb(141, 28, 28); */
+
+}
+
+#forme p{
+    color:#dca93f ;
+    font-weight: 600;
+}
+
+#espac {
+    margin-right: 10%;
+}
+
+#inpt_cadastrar input {
+    background-color: rgb(220, 169, 63);
+    color: black;
+    height: 60px;
+    width: 80%;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: 1px 1px 12px rgb(220, 169, 63, 0.5);
+
+}
+
+#inpt_cadastrar input:hover{
+    background-color: rgba(0, 0, 0, 0.897);
+    color: rgb(220, 169, 63);
+    font-size: 20px;
+}
+
+#form-flex2 select{
+    height: 32px;
+    cursor: pointer;
+}
+
+
+.extra{
+    text-align: center;
+}
+
+#img_aguarde{
+    /* text-align: center;*/
+    margin-left: 40%;
+
+}

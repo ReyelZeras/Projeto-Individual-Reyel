@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/adm.css">
+    <script type="text/javascript" src="funcoes2.js"></script>
+    <script type="text/javascript" src="../routes/jogadores.js"></script>
+
+    <title>ADM</title>
+</head>
+
+<body>
+
+
+    <div class="display">
+        <div id="menu-lateral">
+            <div id="logo"><img src="./imagens/logo.png" alt=""></div>
+
+            <a href="index.html" class="link">
+                <div id="menu-home" class="icone-lateral"><img src="./imagens/icones/home.svg" alt=""> <span
+                        id="txt-tit1">INÍCIO</span></div>
+            </a>
+
+            <a href="jogos.html" class="link">
+                <div id="menu-quadra" class="icone-lateral"><img src="./imagens/icones/quadra.svg" alt=""><span
+                        id="txt-tit2">JOGOS</span></div>
+            </a>
+
+            <a href="noticias.html" class="link">
+                <div id="menu-news" class="icone-lateral"><img src="./imagens/icones/newspaper.svg" alt=""><span
+                        id="txt-tit3">NOTÍCIAS</span> </div>
+            </a>
+
+            <a href="usuario.html" class="link">
+                <div id="menu-perfil" class="icone-lateral"><img src="./imagens/icones/perfil.svg" alt=""><span
+                        id="txt-tit4">PERFIL</span></div>
+            </a>
+        </div>
+
+        <div class="fundo">
+
+            <div class="div_img" id="div_img1">
+                
+            </div>
+            <div class="info_user">Nome: <b id="b_nome"></b></div><br>
+            <div class="info_user">E-mail: <b id="b_user"></b></div><br>
+            
+
+            <div class="div_btn">
+                <a href="#" class="highlight" onclick="logoff()"><button class="btn_sair">Sair</button></a>
+            </div>
+
+        </div>
+    </div>
+    
+ 
+
+
+</body>
+
+</html>
+
+<script>
+
+verificar_autenticacao();
+
+
+
+
+</script>

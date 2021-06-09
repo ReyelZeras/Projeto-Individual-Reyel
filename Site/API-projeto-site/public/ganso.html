@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/ganso.css">
+    <script type="text/javascript" src="funcoes.js"></script>
+    <title>Diniz aguarda por Ganso</title>
+    
+</head>
+
+<body onload="obterPublicacoes()">
+
+    <div class="display">
+        <div id="menu-lateral">
+            <div id="logo"><img src="./imagens/logo.png" alt=""></div>
+
+            <a href="index.html" class="link">
+                <div id="menu-home" class="icone-lateral"><img src="./imagens/icones/home.svg" alt=""> <span
+                        id="txt-tit1">INÍCIO</span></div>
+            </a>
+
+            <a href="jogos.html" class="link">
+                <div id="menu-quadra" class="icone-lateral"><img src="./imagens/icones/quadra.svg" alt=""><span
+                        id="txt-tit2">JOGOS</span></div>
+            </a>
+
+            <a href="noticias.html" class="link">
+                <div id="menu-news" class="icone-lateral"><img src="./imagens/icones/newspaper.svg" alt=""><span
+                        id="txt-tit3">NOTÍCIAS</span> </div>
+            </a>
+
+            <a href="usuario.html" class="link">
+                <div id="menu-perfil" class="icone-lateral"><img src="./imagens/icones/perfil.svg" alt=""><span
+                        id="txt-tit4">PERFIL</span></div>
+            </a>
+        </div>
+
+
+
+        <div class="conteinerInferior">
+            <div class="cabecalho">
+
+                <h1 class="noticiaTitulo"> <img src="imagens/icones/setaesquerdaD.png" onclick="voltar()" class="voltar"
+                        alt="">NOTÍCIAS</h1>
+                <div class="linhaDourada"></div>
+            </div>
+            <div class="materia">
+                <h1 class="titulo">Diniz aguarda por Ganso</h1>
+                <h2 class="subtitulo">Técnico do Santos está confiante na volta do meia que atualmente está no
+                    Fluminense.</h2>
+                <h3 class="sub">São Paulo, SP - 03/06/2021</h3>
+
+                <img class="img_materia" src="imagens/noticias/ganso.jpg" alt="">
+
+                <p>O técnico Fernando Diniz confirmou o interesse em ter Paulo Henrique Ganso, do Fluminense, no Santos.
+                </p>
+
+                <p>O Peixe tenta convencer o Tricolor das Laranjeiras a facilitar as condições de um empréstimo com
+                    salários divididos. E o meia tenta convencer a diretoria do Flu para sair.</p>
+
+                <p>"É um assunto interno. Resolvemos internamente. Ganso teve grande participação comigo no Fluminense.
+                    Se puder voltar, seria bom para todo mundo, mas tratamos disso internamente, disse Diniz, após a
+                    vitória por 2 a 0 sobre o Cianorte. </p>
+
+                <p>O Santos contratou quatro atletas para o segundo semestre: o zagueiro Danilo Boza, o lateral-esquerdo
+                    Moraes, o volante Vinicius Zanocelo e o meia-atacante Marcos Guilherme.</p>
+
+                <p>A prioridade do Peixe é encontrar um meia com status de titular. Ganso é apenas uma das opções.</p>
+
+
+                <div class="post">
+                    <h2>Faça um comentário!</h2>
+                    <form id="form_publicar" method="post" onsubmit="return publicar()">
+                        <!-- <p>Comentário:</p> -->
+                        <textarea id="" rows="3" cols="50" maxlength="100" class="textarea-padrao" name="descricao"></textarea>
+                        <br>
+                        <button id="btn_publicar" class="btn_pub">Publicar</button>
+                    </form>
+                    <div class="extra">
+                        <div id="div_erro" class="msg_erro">
+                        </div>
+                        <img src="imagens/icones/aguarde.gif" id="img_aguarde"> 
+                    </div>
+                </div>
+                <div class="feed">
+                    <h1>Publicações</h1>
+                    <div id="feed_container" class="container">
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+        </div>
+
+
+</body>
+
+</html>
+
+
+<script>
+
+    function voltar() {
+        window.location.href = "noticias.html";
+    }
+
+
+    function publicar() {
+        console.log("entrei!")
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_publicar));
+        var idUsuario = sessionStorage.idUsuario_usuario_meuapp;
+        fetch(`/publicacoes/publicar/${idUsuario}`, {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+                obterPublicacoes();
+
+                finalizarAguardar();
+            } else {
+                console.log('Erro ao publicar!');
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function atualizarFeed(publicacoes) {
+        var feed = document.getElementById("feed_container");
+        feed.innerHTML = "";
+        for (let i = 0; i < publicacoes.length; i++) {
+            var publicacao = publicacoes[i];
+
+            var divPublicacao = document.createElement("div")
+            var divNome = document.createElement("div")
+            var divDescricao = document.createElement("div")
+
+            divNome.innerHTML = `${publicacao.nome}: `;
+            divDescricao.innerHTML = publicacao.descricao;
+
+            divPublicacao.className = "publicacao"
+            divNome.className = "nome";
+            divDescricao.className = "descricao";
+
+            divPublicacao.appendChild(divNome);
+            divPublicacao.appendChild(divDescricao);
+
+            feed.appendChild(divPublicacao);
+        }
+    }
+
+    function obterPublicacoes() {
+        aguardar();
+        fetch("/publicacoes")
+        .then(resposta => {
+            if (resposta.ok) {
+                resposta.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                   
+                    atualizarFeed(resposta);
+
+                    finalizarAguardar();
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+                finalizarAguardar("Nenhum resultado encontrado ou erro na API");
+            }
+        })
+        .catch(function (error) {
+            console.error(`Erro na obtenção das publicações: ${error.message}`);
+        });
+    };
+
+
+
+    function aguardar() {
+        btn_publicar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
+        div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizarAguardar(resposta) {
+        btn_publicar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
+        if (resposta) {
+            div_erro.style.visibility = 'visible';
+            div_erro.innerHTML = resposta;
+        }
+    }
+
+    verificar_autenticacao();
+
+</script>
